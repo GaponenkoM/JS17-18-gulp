@@ -1,0 +1,93 @@
+﻿body{
+    /*background: #f0efe7;*/
+	position: absolute;
+	width: 100%;
+	background: url("../../img/dist/base.jpg") top center no-repeat;
+    font: 15px/1.5 Arial, sans-serif;
+    color: #4e443c;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+.wrapper{
+    max-width: 620px;
+	height: 1400px;
+    padding: 0 20px 40px 20px;
+    margin: auto;
+}
+
+	/*CAROUSEL*/
+h1{
+	margin-top: 15px;
+    color: #4E443C;
+    font-size: 20px;
+    font-weight: bold;
+	text-align: center;
+}
+
+	/*CHECKBOX CSS*/
+.checkbox_css{
+	margin: 20px;
+}
+
+.checkbox_css input[type=checkbox]{
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+
+.checkbox_css label {
+	cursor: pointer;
+}
+
+.checkbox_css label:after{
+	content: ' ';
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background-image: url("../../img/dist/checkbox-2.png");
+	position: relative;
+	top: 3px;
+	margin-left: 15px;
+}
+
+.checkbox_css input[type=checkbox]:checked + label:after{
+	background-position: 0 -17px;
+}
+
+.checkbox_css label:hover:after{
+	background-position: 0 -34px;
+	box-shadow: inset 0px 0px 15px -3px rgba(55,218,224,1);
+}
+
+.checkbox_css input[type=checkbox]:checked + label:hover:after{
+	background-position: 0 -51px;
+}
+
+	/*CHECKBOX JQUERY*/
+.checkbox_jquery{
+	font: 15px/1.5 Arial, sans-serif;
+    color: #4e443c;
+}
+
+.checkbox_jquery label{
+	margin-left: 6px;
+	position: relative;
+	top: -4px;
+}
+
+.niceCheck{
+	width: 17px;
+	height: 17px;
+	margin-left: 12px;
+	display: inline-block;
+	cursor: pointer;
+	background-image: url("../../img/dist/checkbox-sprite.png");
+}
+
+.niceCheck input{
+	display: none;
+}
+
+.niceCheck:hover{
+	box-shadow: inset 0px 0px 15px -3px rgba(55,218,224,1);
+}
+
